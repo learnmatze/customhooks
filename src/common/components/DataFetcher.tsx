@@ -14,9 +14,10 @@ interface Post {
 }
 
 const DataFetcher: React.FC = () => {
-    let {data, loading, error } = useFetch<Post[]>('https://jsonplaceholder.typicode.com/posts');
-    if (loading) return <p>Lädt Daten...</p>;
-    if (error) return <p>Fehler: {error}</p>;
+    let {data } = useFetch('https://jsonplaceholder.typicode.com/posts');
+    // let {data, loading, error } = useFetch<Post[]>('https://jsonplaceholder.typicode.com/posts');
+    // if (loading) return <p>Lädt Daten...</p>;
+    // if (error) return <p>Fehler: {error}</p>;
     return (
         <div>
             <h2>Posts-Liste</h2>
