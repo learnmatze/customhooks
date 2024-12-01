@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import useDebounce from './hooks/useDebouncer.tsx';
+import useDebounce from '../hooks/useDebouncer.tsx';
 
 const DebouncerInput: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>('');
